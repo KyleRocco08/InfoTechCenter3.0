@@ -50,25 +50,25 @@ weatherAlert = weather()
 
 def vRS():
     if weatherAlert == "Icy":
-        print("\033[3;30m\nVRS has changed your alarm 30 minutes earlier based on the NWS forcast of",weatherAlert, "roads")
+        print("\nVRS has changed your alarm 30 minutes earlier based on the NWS forcast of",weatherAlert, "roads")
         print("VRS will only allow your car to go 30MPH")
     elif weatherAlert == "Snow":
-        print("\033[3;37m\nVRS has changed your alarm 15 minutes earlier based on the NWS forcast of",weatherAlert)
+        print("\nVRS has changed your alarm 15 minutes earlier based on the NWS forcast of",weatherAlert)
         print("VRS will only allow your car to go 50MPH")
     elif weatherAlert == "Rain":
-        print("\033[3;36m\nVRS has changed your alarm 5 minutes earlier based on the NWS forcast of",weatherAlert)
+        print("\nVRS has changed your alarm 5 minutes earlier based on the NWS forcast of",weatherAlert)
         print("VRS will only allow your car to go 60MPH")
     elif weatherAlert == "Windy":
-        print("\033[3;30m\nVRS has changed your alarm 5 minutes earlier based on the NWS forcast of",weatherAlert)
+        print("\nVRS has changed your alarm 5 minutes earlier based on the NWS forcast of",weatherAlert)
         print("VRS will only allow your car to go 70MPH")
     elif weatherAlert == "Foggy":
-        print("\033[3;35m\nVRS has changed your alarm 5 minutes earlier based on the NWS forcast of",weatherAlert)
+        print("\nVRS has changed your alarm 5 minutes earlier based on the NWS forcast of",weatherAlert)
         print("VRS will only allow your car to go 60MPH")
     elif weatherAlert == "Storming":
-        print("\033[3;34m\nVRS has changed your alarm 15 minutes earlier based on the NWS forcast of",weatherAlert)
+        print("\nVRS has changed your alarm 15 minutes earlier based on the NWS forcast of",weatherAlert)
         print("VRS will only allow your car to go 50MPH")
     else:
-        print("\033[3;33m\nThe weather today is,",weatherAlert,"let's Gooooo!")
+        print("\nThe weather today is,",weatherAlert,"let's Gooooo!")
         print("VRS will only allow your car to go 85MPH")
 vRS()
 
