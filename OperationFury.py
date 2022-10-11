@@ -11,6 +11,8 @@ condition
 #import library here
 import random
 
+from time import sleep
+
 # Gas level function
 def gasLevelGauge():
     gasLevelList = ["Empty", "Low", "Quarter", "Half", "Three Quarter", "Full Tank"]
@@ -22,6 +24,8 @@ gasLevelIndicator = gasLevelGauge()
 
 def gasLevelAlert():
     if gasLevelIndicator == "Empty":
-        print("***WARNING YOU ARE ON EMPTY***\nCalling Emergency Contact")
+        print("\033[1;31m ***WARNING YOU ARE ON EMPTY***")
+        sleep(2)
+        print("\nCalling Emergency Contact")
 
 gasLevelAlert()
