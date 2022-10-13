@@ -32,6 +32,7 @@ def gasLevelAlert():
 
     milesToGasStationLow = round(random.uniform(1,25),1)
     milesToGasStationQuarter = round(random.uniform(26, 50), 1)
+    milesToGasStationHalf = round(random.uniform(51, 75), 1)
 
     if gasLevelIndicator == "Empty":
         print("\033[1;31m ***WARNING YOU ARE ON EMPTY***")
@@ -48,9 +49,30 @@ def gasLevelAlert():
     elif gasLevelIndicator == "Quarter":
         print("\033[1;33m ***WARING***")
         sleep(2)
-        print("\nYour gas tank is at quarter tank, checking Google Maps for the closet gas station")
+        print("\nYour gas tank is a quarter tank full, checking Google Maps for the closet gas station")
         sleep(1)
-        print("\nThe closest gas station is", listOfGasStations(),"which is",milesToGasStationQuarter,"miles away.")
+        print("\nYou need to get to this gas station", listOfGasStations(),"which is",milesToGasStationQuarter,"miles away.")
+
+    elif gasLevelIndicator == "Half":
+        print("\033[1;34m ***Alert***")
+        sleep(2)
+        print("\nYour gas tank is a half full, checking Google Maps for the closet gas station")
+        sleep(1)
+        print("\nThe closest gas station is", listOfGasStations(),"which is",milesToGasStationHalf,"miles away.")
+
+    elif gasLevelIndicator == "Three Quarter":
+        print("\033[1;36m ***Alert***")
+        sleep(2)
+        print("\nYour gas tank is three quarters full")
+        sleep(1)
+        print("You have plenty of gas left")
+
+    else:
+        print("\033[1;37m ***Alert***")
+        sleep(2)
+        print("\nYour gas tank is full")
+
+
 
 gasLevelAlert()
 
